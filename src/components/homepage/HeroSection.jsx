@@ -5,12 +5,12 @@ const HeroSection = () => {
     return (
         <div className='flex items-center py-15 px-50 gap-10'>
 
-            <div className='flex flex-col gap-4 '>
+            <div className='flex flex-col gap-4'>
                 <div className='flex gap-1 bg-[#E1E7FF] rounded-4xl p-2 w-fit'>
                     <div class="relative flex items-center justify-center h-8 w-8">
 
                     <div class="absolute inset-0 bg-[#C7D0FF] rounded-full opacity-60"></div>
-                    <div class="relative flex items-center justify-center h-5 w-5 bg-linear-to-br from-[#4F39F6] to-[#9514FA] rounded-full shadow-md">
+                    <div class="relative flex items-center justify-center h-4 w-4 bg-linear-to-br from-[#4F39F6] to-[#9514FA] rounded-full shadow-md">
                         <div class="h-2 w-2 bg-white/80 rounded-full"></div>
                     </div>
 
