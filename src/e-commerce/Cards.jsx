@@ -1,9 +1,15 @@
-import React from 'react';
+import { Check, CircleCheckBig } from 'lucide-react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
+
 
 const Cards = ({product, setAddedProduct, addedProduct, setCart}) => {
 
+    const [isClicked, setIsClicked] = useState(false)
+
     const handleButton = () => {
+
+        setIsClicked(true)
 
         setCart(addedProduct.length)
 
@@ -35,22 +41,26 @@ const Cards = ({product, setAddedProduct, addedProduct, setCart}) => {
 
             
             <div className="flex items-baseline mb-8">
-                <span className="text-3xl font-bold text-slate-900">$29</span>
+                <span className="text-3xl font-bold text-slate-900">${product.price}</span>
                 <span className="text-gray-400 ml-1 text-sm">/{product.period}</span>
             </div>
 
             <ul className="space-y-4 mb-8">
                 {product.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-3 text-slate-600 text-sm font-medium">
-                        {feature}
+                       <Check></Check> {feature}
                     </li>
                 ))}
             </ul>
 
-            {/* Button */}
-            <button onClick={handleButton} className="w-full bg-[#8b2cf5] hover:bg-[#7a22e0] text-white font-bold py-4 rounded-2xl transition-colors duration-200">
-                Buy Now
+            
+    
+
+            <button onClick={handleButton} className={`w-full ${isClicked ? "bg-green-600" : "bg-[#8b2cf5]" }  text-white font-bold py-4 rounded-2xl transition-colors duration-200`}>
+                {isClicked ? "Added to cart" : "Buy Now"}
             </button>
+
+
         </div>
     );
 };

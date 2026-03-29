@@ -10,10 +10,12 @@ const Cart = ({addedProduct ,setAddedProduct}) => {
 
 
     return (
-        <div>
+        <div className='border border-gray-200 rounded-2xl p-5'>
+            <div>
+                <h1>Your Cart</h1>
             {
                 addedProduct.map((product) =>{
-                    return <div key={product.id} className='flex justify-between items-center p-4 border border-gray-400 rounded-xl m-2'>
+                    return <div key={product.id} className='flex justify-between items-center p-3 bg-gray-50 border-gray-100 rounded-xl m-2'>
                     <div className='flex gap-3'>
                         <img
                                 src="https://bplt20.com.bd/images/sliders/slider-2025.jpeg"
@@ -23,17 +25,18 @@ const Cart = ({addedProduct ,setAddedProduct}) => {
                         
                         <div>
                             <h1 className='text-2xl font-bold'>{product.name}</h1>
-                            <h3>{product.price}</h3>
+                            <h3>$ {product.price}</h3>
                         </div>
                     </div>
 
-                    <button onClick={() => handleRemove(product)} className='btn' color='red' >Remove</button>
+                    <button onClick={() => handleRemove(product)} className='btn text-red-700 '  >Remove</button>
                 </div>
                 })
 
 
 
             }
+            </div>
         </div>
     );
 };
