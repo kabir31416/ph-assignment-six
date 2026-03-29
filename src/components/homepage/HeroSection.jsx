@@ -7,16 +7,16 @@ const HeroSection = () => {
 
             <div className='flex flex-col gap-4'>
                 <div className='flex gap-1 bg-[#E1E7FF] rounded-4xl p-2 w-fit'>
-                    <div class="relative flex items-center justify-center h-8 w-8">
+                    <div className="relative flex items-center justify-center h-8 w-8">
 
-                    <div class="absolute inset-0 bg-[#C7D0FF] rounded-full opacity-60"></div>
-                    <div class="relative flex items-center justify-center h-4 w-4 bg-linear-to-br from-[#4F39F6] to-[#9514FA] rounded-full shadow-md">
-                        <div class="h-2 w-2 bg-white/80 rounded-full"></div>
+                    <div className="absolute inset-0 bg-[#C7D0FF] rounded-full opacity-60"></div>
+                    <div className="relative flex items-center justify-center h-4 w-4 bg-linear-to-br from-[#4F39F6] to-[#9514FA] rounded-full shadow-md">
+                        <div className="h-2 w-2 bg-white/80 rounded-full"></div>
                     </div>
 
                     </div>
 
-                    <span class="text-[#7A2BFF] font-medium text-lg whitespace-nowrap">
+                    <span className="text-[#7A2BFF] font-medium text-lg whitespace-nowrap">
                         New: AI-Powered Tools Available
                     </span>
                 </div>

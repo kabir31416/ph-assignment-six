@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Writer Pro",
+    "description": "Generate blog posts, ads, and social media content using advanced AI.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited content generation",
+      "SEO optimization",
+      "Multi-language support"
+    ],
+    "icon": "https://via.placeholder.com/100?text=AI+Writer"
+  },
+  {
+    "id": 2,
+    "name": "AI Image Generator",
+    "description": "Create high-quality images from text prompts instantly.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Text-to-image generation",
+      "HD downloads",
+      "Style presets"
+    ],
+    "icon": "https://via.placeholder.com/100?text=AI+Image"
+  },
+  {
+    "id": 3,
+    "name": "Chatbot API Suite",
+    "description": "Integrate AI chatbots into your apps and websites.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "REST API access",
+      "Custom training",
+      "Webhook support"
+    ],
+    "icon": "https://via.placeholder.com/100?text=Chatbot"
+  },
+  {
+    "id": 4,
+    "name": "AI Code Assistant",
+    "description": "Boost coding productivity with AI-powered suggestions and debugging.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Auto code completion",
+      "Bug detection",
+      "Supports multiple languages"
+    ],
+    "icon": "https://via.placeholder.com/100?text=Code+AI"
+  },
+  {
+    "id": 5,
+    "name": "SEO AI Toolkit",
+    "description": "Optimize your website ranking using AI-driven SEO tools.",
+    "price": 15.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Keyword research",
+      "Competitor analysis",
+      "On-page SEO suggestions"
+    ],
+    "icon": "https://via.placeholder.com/100?text=SEO"
+  },
+  {
+    "id": 6,
+    "name": "AI Video Generator",
+    "description": "Create marketing and explainer videos with AI.",
+    "price": 49.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Text-to-video",
+      "Voiceover generation",
+      "Stock media library"
+    ],
+    "icon": "https://via.placeholder.com/100?text=Video+AI"
+  },
+  {
+    "id": 7,
+    "name": "AI Resume Analyzer",
+    "description": "Analyze and improve resumes for better job opportunities.",
+    "price": 7.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "ATS score analysis",
+      "Improvement suggestions",
+      "Keyword optimization"
+    ],
+    "icon": "https://via.placeholder.com/100?text=Resume"
+  },
+  {
+    "id": 8,
+    "name": "AI Voice Cloner",
+    "description": "Clone and generate realistic human-like voices.",
+    "price": 24.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Voice cloning",
+      "Multiple languages",
+      "Studio-quality output"
+    ],
+    "icon": "https://via.placeholder.com/100?text=Voice+AI"
+  },
+  {
+    "id": 9,
+    "name": "AI Automation Plugin",
+    "description": "Automate repetitive tasks across apps using AI workflows.",
+    "price": 59.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Workflow automation",
+      "App integrations",
+      "Custom triggers"
+    ],
+    "icon": "https://via.placeholder.com/100?text=Automation"
+  }
+]
