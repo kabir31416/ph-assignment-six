@@ -11,10 +11,10 @@ const ProductList = ({dataPromise, setCart, setNavCart}) => {
     const [addedProduct, setAddedProduct] = useState([]);
 
     return (
-        <div className='flex flex-col gap-10 px-50 py-25 ' id='product'>
+        <div className='flex flex-col gap-10 p-3 lg:px-50 py-25 ' id='product'>
 
             <div className='flex flex-col items-center justify-center gap-4'>
-                <h1 className='font-extrabold text-5xl'>Premium Digital Tools</h1>
+                <h1 className='font-extrabold text-3xl md:text-5xl'>Premium Digital Tools</h1>
                 <p className='text-center'>Choose from our curated collection of premium digital products designed <br/>to boost your productivity and creativity.</p>
                 <div className='flex border rounded-full gap-3 border-gray-300'>
 
