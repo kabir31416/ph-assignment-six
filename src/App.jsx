@@ -5,6 +5,7 @@ import Statistics from './components/homepage/Statistics'
 import Navbar from './components/navbar/Navbar'
 import ProductList from './e-commerce/ProductList'
 import { ToastContainer } from 'react-toastify'
+import StepSection from './components/homepage/StepSection'
 
 
 
@@ -24,14 +25,16 @@ function App() {
 
   return (
     <>
-    <div className='max-w-400 m-auto'>
+    <div >
       <Navbar navCart={navCart}/>
       {/* <HeroSection/>
       <Statistics/> */}
 
+      
       <Suspense fallback={"Data is loading"}>
         <ProductList dataPromise={dataPromise} cart={cart} setCart={setCart} setNavCart={setNavCart}/>
       </Suspense>
+      <StepSection></StepSection>
 
       <ToastContainer/> 
     </div>

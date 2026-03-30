@@ -20,11 +20,21 @@ const Cards = ({product, setAddedProduct, addedProduct, setCart, setNavCart}) =>
     }
 
 
+    const tagColors = {
+        "new": "bg-blue-100 text-blue-600",
+        "popular": "bg-green-100 text-green-600",
+        "best seller": "bg-orange-100 text-orange-600",
+        "default": "bg-gray-100 text-gray-600"
+    };
+
+    const colorClass = tagColors[product.tag] || tagColors.default;
+
+
     return (
         <div className=" w-full h-auto rounded-3xl border border-gray-100 bg-white p-6 shadow-sm relative">
             
             <div className="absolute top-6 right-6">
-                <span className="bg-orange-100 text-orange-600 text-xs font-semibold px-3 py-1 rounded-full">
+                <span className={`${colorClass} text-xs font-semibold px-3 py-1 rounded-full`}>
                 {product.tag}
                 </span>
             </div>
@@ -55,10 +65,8 @@ const Cards = ({product, setAddedProduct, addedProduct, setCart, setNavCart}) =>
                 ))}
             </ul>
 
-            
-    
 
-            <button onClick={handleButton} className={`w-full ${isClicked ? "bg-green-600" : "bg-[#8b2cf5]" }  text-white font-bold py-4 rounded-2xl transition-colors duration-200`}>
+            <button onClick={handleButton} className={`w-full ${isClicked ? "bg-green-600" : "bg-[#8b2cf5]" }  text-white font-bold py-4 rounded-full transition-colors duration-200`}>
                 {isClicked ? "Added to cart" : "Buy Now"}
             </button>
 

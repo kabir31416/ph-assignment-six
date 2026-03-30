@@ -4,13 +4,13 @@ import cart from '../../assets/products/shopping-cart.png'
 
 const Navbar = ({navCart}) => {
     return (
-        <nav className='flex justify-between py-5 px-50 m-auto items-center'>
+        <nav className='flex justify-between py-5 px-50 m-auto items-center sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-gray-200'> 
             <div>
                 <img className='h-10 w-45' src={logo} alt="logo" />
             </div>
 
             <div>
-                <ul className='flex gap-3'>
+                <ul className='flex gap-5'>
                     <li>Products</li>
                     <li>Features</li>
                     <li>Pricing</li>
