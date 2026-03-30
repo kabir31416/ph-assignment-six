@@ -7,6 +7,7 @@ import ProductList from './e-commerce/ProductList'
 import { ToastContainer } from 'react-toastify'
 import StepSection from './components/homepage/StepSection'
 import SimplePricing from './components/homepage/SimplePricing'
+import Workflow from './components/homepage/Workflow'
 
 
 
@@ -31,11 +32,12 @@ function App() {
       {/* <HeroSection/>
       <Statistics/> */}
 
-      <SimplePricing/>
+      <Workflow></Workflow>
       <Suspense fallback={"Data is loading"}>
         <ProductList dataPromise={dataPromise} cart={cart} setCart={setCart} setNavCart={setNavCart}/>
       </Suspense>
       <StepSection/>
+      <SimplePricing/>
 
       <ToastContainer/> 
     </div>
