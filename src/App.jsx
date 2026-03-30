@@ -14,22 +14,23 @@ const loadData = async()  => {
   return res.json();
 } 
 
+const dataPromise = loadData();
+
 
 function App() {
 
-  const dataPromise = loadData();
-
   const [cart, setCart] = useState(0);
+  const [navCart, setNavCart] = useState(0);
 
   return (
     <>
     <div className='max-w-400 m-auto'>
-      {/* <Navbar/>
-      <HeroSection/>
+      <Navbar navCart={navCart}/>
+      {/* <HeroSection/>
       <Statistics/> */}
 
       <Suspense fallback={"Data is loading"}>
-        <ProductList dataPromise={dataPromise} cart={cart} setCart={setCart} />
+        <ProductList dataPromise={dataPromise} cart={cart} setCart={setCart} setNavCart={setNavCart}/>
       </Suspense>
 
       <ToastContainer/> 

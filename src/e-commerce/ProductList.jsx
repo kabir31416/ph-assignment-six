@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import ProductCard from './ProductCard';
 import Cart from './Cart';
 
-const ProductList = ({dataPromise, setCart}) => {
+const ProductList = ({dataPromise, setCart, setNavCart}) => {
 
     const productData = use(dataPromise);
 
@@ -11,7 +11,7 @@ const ProductList = ({dataPromise, setCart}) => {
     const [addedProduct, setAddedProduct] = useState([]);
 
     return (
-        <div className='flex flex-col gap-10 px-50 py-40'>
+        <div className='flex flex-col gap-10 px-50 py-25'>
 
             <div className='flex flex-col items-center justify-center gap-4'>
                 <h1 className='font-extrabold text-5xl'>Premium Digital Tools</h1>
@@ -28,7 +28,7 @@ const ProductList = ({dataPromise, setCart}) => {
 
             <div >
             {
-                active === "Active" ? <ProductCard key={productData.id} productData={productData} addedProduct={addedProduct} setAddedProduct={setAddedProduct} setCart={setCart}></ProductCard> : <Cart addedProduct={addedProduct} setAddedProduct={setAddedProduct}></Cart>
+                active === "Active" ? <ProductCard key={productData.id} productData={productData} addedProduct={addedProduct} setAddedProduct={setAddedProduct} setCart={setCart} setNavCart={setNavCart}></ProductCard> : <Cart addedProduct={addedProduct} setAddedProduct={setAddedProduct} setNavCart={setNavCart}></Cart>
             }
             </div>
 

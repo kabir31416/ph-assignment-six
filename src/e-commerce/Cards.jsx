@@ -3,18 +3,20 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
 
-const Cards = ({product, setAddedProduct, addedProduct, setCart}) => {
+const Cards = ({product, setAddedProduct, addedProduct, setCart, setNavCart}) => {
 
     const [isClicked, setIsClicked] = useState(false)
 
     const handleButton = () => {
+    
+        const updatedProducts = [...addedProduct, product];
 
-        setIsClicked(true)
-
-        setCart(addedProduct.length)
-
-        toast(`${product.name} added to cart`)
-        setAddedProduct([...addedProduct, product])
+        setIsClicked(true);
+        setAddedProduct(updatedProducts); 
+        setNavCart(updatedProducts.length); 
+        setCart(updatedProducts.length); 
+        
+        toast(`${product.name} added to cart`);
     }
 
 
@@ -28,8 +30,8 @@ const Cards = ({product, setAddedProduct, addedProduct, setCart}) => {
             </div>
 
             <div className="mb-6">
-                <div className="w-14 h-14 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100">
-                <span className="text-2xl">📝</span> 
+                <div className="w-13 h-13 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100 p-2">
+                <img src={product.icon} alt="product" />
                 </div>
             </div>
 

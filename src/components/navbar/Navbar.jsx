@@ -2,9 +2,9 @@ import React from 'react';
 import logo from '../../assets/DigiTools.png'
 import cart from '../../assets/products/shopping-cart.png'
 
-const Navbar = () => {
+const Navbar = ({navCart}) => {
     return (
-        <div className='flex justify-between py-5 px-50 m-auto items-center'>
+        <nav className='flex justify-between py-5 px-50 m-auto items-center'>
             <div>
                 <img className='h-10 w-45' src={logo} alt="logo" />
             </div>
@@ -21,11 +21,12 @@ const Navbar = () => {
 
             <div className='flex gap-3 items-center'>
                 <img className='h-4 w-4' src={cart} alt="" />
+                <h1>({navCart})</h1>
                 <h1>Login</h1>
                 <button className='rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 hover:cursor-pointer'>Get Started</button>
             </div>
             
-        </div>
+        </nav>
     );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Cards from './Cards';
 
-const ProductCard = ({productData, addedProduct, setAddedProduct, setCart}) => {
+const ProductCard = ({productData, addedProduct, setAddedProduct, setCart, setNavCart}) => {
     return (
 
         <>
@@ -9,7 +9,7 @@ const ProductCard = ({productData, addedProduct, setAddedProduct, setCart}) => {
             {
                 productData.map( product => {
                     return (
-                        <Cards key={product.id} product={product} addedProduct={addedProduct} setAddedProduct={setAddedProduct} setCart={setCart}></Cards>
+                        <Cards key={product.id} product={product} addedProduct={addedProduct} setAddedProduct={setAddedProduct} setCart={setCart} setNavCart={setNavCart}></Cards>
                     )
                     })
             }
