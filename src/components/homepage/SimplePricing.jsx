@@ -23,7 +23,7 @@ const SimplePricing = () => {
                             <li className='flex'><Check></Check> 1 project per month</li>
                         </ul>
 
-                        <button className='rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 mt-8  hover:cursor-pointer'>Get Started Free</button>
+                        <button className='rounded-full btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 mt-8  hover:cursor-pointer'>Get Started Free</button>
                     </div>
 
                     <div className='relative border rounded-3xl shadow p-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>
@@ -47,7 +47,7 @@ const SimplePricing = () => {
                             <li className='flex'><Check></Check> Advanced analytics</li>
                         </ul>
 
-                        <button className='rounded-full w-full text-purple-700 bg-white p-2 mt-8  hover:cursor-pointer'>Get Started Free</button>
+                        <button className='rounded-full btn w-full text-purple-700 bg-white p-2 mt-8  hover:cursor-pointer'>Get Started Free</button>
                         </div>
                     </div>
 
@@ -66,7 +66,7 @@ const SimplePricing = () => {
                             <li className='flex'><Check></Check> Custom branding</li>
                         </ul>
 
-                        <button className='rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 mt-8 hover:cursor-pointer'>Get Started Free</button>
+                        <button className='rounded-full btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 mt-8 hover:cursor-pointer'>Get Started Free</button>
                     </div>
             </div>
         </div>

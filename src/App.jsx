@@ -30,16 +30,15 @@ function App() {
     <>
     <div >
       <Navbar navCart={navCart}/>
-      {/* <HeroSection/>
-      <Statistics/> */}
-
-      <Footer></Footer>
+      <HeroSection/>
+      <Statistics/>
       <Suspense fallback={"Data is loading"}>
         <ProductList dataPromise={dataPromise} cart={cart} setCart={setCart} setNavCart={setNavCart}/>
       </Suspense>
       <StepSection/>
       <SimplePricing/>
-      <Workflow></Workflow>
+      <Workflow/>
+      <Footer/>
 
       <ToastContainer/> 
     </div>

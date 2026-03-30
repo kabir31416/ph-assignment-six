@@ -1,7 +1,8 @@
-import React from 'react';
+
 import Cards from './Cards';
 
 const ProductCard = ({productData, addedProduct, setAddedProduct, setCart, setNavCart}) => {
+
     return (
 
         <>

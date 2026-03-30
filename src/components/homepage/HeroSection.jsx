@@ -1,5 +1,6 @@
 import React from 'react';
 import hero from '../../assets/banner.png'
+import Play from '../../assets/play.png'
 
 const HeroSection = () => {
     return (
@@ -9,9 +10,9 @@ const HeroSection = () => {
                 <div className='flex gap-1 bg-[#E1E7FF] rounded-4xl p-2 w-fit'>
                     <div className="relative flex items-center justify-center h-8 w-8">
 
-                    <div className="absolute inset-0 bg-[#C7D0FF] rounded-full opacity-60"></div>
-                    <div className="relative flex items-center justify-center h-4 w-4 bg-linear-to-br from-[#4F39F6] to-[#9514FA] rounded-full shadow-md">
-                        <div className="h-2 w-2 bg-white/80 rounded-full"></div>
+                    <div className="absolute inset-0 bg-purple-300 rounded-full opacity-60"></div>
+                    <div className="relative flex items-center justify-center h-4 w-4 bg-purple-400 rounded-full shadow-md">
+                        <div className="h-2 w-2 bg-purple-600 rounded-full"></div>
                     </div>
 
                     </div>
@@ -24,11 +25,11 @@ const HeroSection = () => {
                 <h1 className='font-extrabold text-7xl text-[#101727]'>Supercharge Your <br></br> Digital Workflow</h1>
                 <p>Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products</p>
                 <div className='flex gap-4'>
-                    <button className='rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 hover:cursor-pointer'>
+                    <button className='rounded-full btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white hover:cursor-pointer'>
                         Explore Products
                     </button>
-                    <button className='rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 hover:cursor-pointer'>
-                        Watch Demo
+                    <button className='rounded-full btn bg-white text-purple-600 border border-purple-600  hover:cursor-pointer flex items-center'>
+                     <span className='mr-1'><img src={Play} alt="play" /></span> Watch Demo
                     </button>
                 </div>
             </div>

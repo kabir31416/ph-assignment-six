@@ -11,7 +11,7 @@ const Navbar = ({navCart}) => {
 
             <div>
                 <ul className='flex gap-5'>
-                    <li>Products</li>
+                    <li><a href="#product">Products</a></li>
                     <li>Features</li>
                     <li>Pricing</li>
                     <li>Testimonials</li>
@@ -20,10 +20,16 @@ const Navbar = ({navCart}) => {
             </div>
 
             <div className='flex gap-3 items-center'>
-                <img className='h-4 w-4' src={cart} alt="" />
-                <h1>({navCart})</h1>
+                <div className='relative cursor-pointer mr-2'>
+                    <img className='h-6 w-6' src={cart} alt="" />
+                    {
+                        navCart === 0 ? "" : (<div className="absolute -top-3 -right-4 flex items-center justify-center w-6 h-6 p-1 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow">
+                        <span className="text-xs font-bold text-white">{navCart}</span>
+                    </div>)
+                    }
+                </div>
                 <h1>Login</h1>
-                <button className='rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 hover:cursor-pointer'>Get Started</button>
+                <button className='rounded-full btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-2 hover:cursor-pointer'>Get Started</button>
             </div>
             
         </nav>

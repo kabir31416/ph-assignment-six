@@ -12,10 +12,17 @@ const Cart = ({addedProduct ,setAddedProduct, setNavCart}) => {
             toast(`${product.name} removed from cart`);
         };
 
+        const handleProceed = () => {
+            setAddedProduct([])
+            setNavCart(0)
+        }
+
+        const totalPrice = addedProduct.reduce((total, product) => total + product.price, 0);
+
     return (
         <div className='border border-gray-200 rounded-2xl p-5'>
             <div>
-                <h1>Your Cart</h1>
+                <h1 className='py-2 font-bold text-2xl'>Your Cart</h1>
 
                 {
                     addedProduct.length === 0 ? 
@@ -30,13 +37,15 @@ const Cart = ({addedProduct ,setAddedProduct, setNavCart}) => {
                     : (<div>
                                 {
                                     addedProduct.map((product) =>{
-                                        return <div key={product.id} className='flex justify-between items-center p-3 bg-gray-50 border-gray-100 rounded-xl m-2'>
+                                        return <div key={product.id} className='flex justify-between items-center p-3 bg-gray-100 border-gray-200 rounded-xl mb-2'>
                                         <div className='flex gap-3'>
-                                            <img
-                                                    src="https://bplt20.com.bd/images/sliders/slider-2025.jpeg"
-                                                    className="w-24 h-15 rounded-xl"
+                                            <div className=" rounded-full bg-white p-4">
+                                                <img
+                                                    src={product.icon}
                                                     alt="player"
+                                                    className='h-6 w-6'
                                                     />
+                                            </div>
                                             
                                             <div>
                                                 <h1 className='text-2xl font-bold'>{product.name}</h1>
@@ -52,6 +61,12 @@ const Cart = ({addedProduct ,setAddedProduct, setNavCart}) => {
 
                 }
 
+                <div className='flex justify-between'>
+                    <p className='py-6'>Total:</p>
+                    <h1 className='font-bold text-2xl'>${totalPrice.toFixed(2)}</h1>
+                </div>
+
+                <button onClick={handleProceed} className='rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-3 hover:cursor-pointer' >Proceed to Checkout</button>
 
             </div>
         </div>

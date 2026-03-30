@@ -11,7 +11,7 @@ const ProductList = ({dataPromise, setCart, setNavCart}) => {
     const [addedProduct, setAddedProduct] = useState([]);
 
     return (
-        <div className='flex flex-col gap-10 px-50 py-25'>
+        <div className='flex flex-col gap-10 px-50 py-25 ' id='product'>
 
             <div className='flex flex-col items-center justify-center gap-4'>
                 <h1 className='font-extrabold text-5xl'>Premium Digital Tools</h1>

@@ -66,7 +66,7 @@ const Cards = ({product, setAddedProduct, addedProduct, setCart, setNavCart}) =>
             </ul>
 
 
-            <button onClick={handleButton} className={`w-full ${isClicked ? "bg-green-600" : "bg-[#8b2cf5]" }  text-white font-bold py-4 rounded-full transition-colors duration-200`}>
+            <button onClick={handleButton} className={`w-full ${isClicked ? "bg-green-600" : "bg-[#8b2cf5]" } btn  text-white font-bold py-4 rounded-full transition-colors duration-200`}>
                 {isClicked ? "Added to cart" : "Buy Now"}
             </button>
 
