@@ -31,13 +31,13 @@ function App() {
     <div >
       <Navbar navCart={navCart}/>
       {/* <HeroSection/> */}
-      <Statistics/>
-      <Suspense fallback={"Data is loading"}>
+      {/* <Statistics/> */}
+      {/* <Suspense fallback={"Data is loading"}>
         <ProductList dataPromise={dataPromise} cart={cart} setCart={setCart} setNavCart={setNavCart}/>
-      </Suspense>
+      </Suspense> */}
       {/* <StepSection/> */}
       {/* <SimplePricing/> */}
-      {/* <Workflow/> */}
+      <Workflow/>
       {/* <Footer/> */}
 
       <ToastContainer/> 

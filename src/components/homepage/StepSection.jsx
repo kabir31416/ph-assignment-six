@@ -5,13 +5,13 @@ import rocket from '../../assets/rocket.png'
 
 const StepSection = () => {
     return (
-        <div className='py-25 px-50 bg-[#F9FAFC] flex flex-col gap-10'>
+        <div className='bg-[#F9FAFC] flex flex-col gap-5 p-3 lg:gap-10 lg:py-25 lg:px-50'>
             <div className='flex flex-col gap-4 items-center'>
-                <h1 className='font-extrabold text-7xl'>Get Started in 3 Steps</h1>
-                <p>Start using premium digital tools in minutes, not hours.</p>
+                <h1 className='font-extrabold text-3xl lg:text-7xl'>Get Started in 3 Steps</h1>
+                <p className='text-center'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
-            <div className='grid sm:grid-cols-1 md: grid-cols-2 lg:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
 
                 <div className="relative flex flex-col items-center p-8 border border-gray-100 rounded-3xl shadow-sm bg-white">
                     <div className="absolute top-3 right-3 flex items-center justify-center w-10 h-10 rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow">

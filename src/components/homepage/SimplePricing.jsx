@@ -3,10 +3,10 @@ import React from 'react';
 
 const SimplePricing = () => {
     return (
-        <div className='px-50 py-25 flex flex-col gap-10'>
+        <div className='flex flex-col gap-10 p-3 lg:px-50 lg:py-25 '>
             <div className='flex flex-col items-center gap-4'>
-                <h1 className='font-extrabold text-5xl'>Simple, Transparent Pricing</h1>
-                <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+                <h1 className='font-extrabold text-center text-3xl lg:text-5xl'>Simple, Transparent Pricing</h1>
+                <p className='text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
