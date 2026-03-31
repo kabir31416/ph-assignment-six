@@ -5,8 +5,8 @@ import Instragram from '../../assets/Social/Instagram.png'
 
 const Footer = () => {
     return (
-        <div className='px-50 pt-25 pb-10 bg-[#101727] text-white'>
-            <div className='flex justify-between'>
+        <div className='p-5 bg-[#101727] text-white lg:px-50 lg:pt-25 lg:pb-10'>
+            <div className='flex flex-col gap-3 lg:flex-row lg:justify-between'>
                   <div>
                     <h1 className='font-extrabold text-4xl mb-4'>DigiTools</h1>
                     <p>Premium digital tools for creators,<br/>professionals, and businesses. Work smarter <br/>with our suite of powerful tools.</p>
@@ -14,7 +14,7 @@ const Footer = () => {
 
                   <div>
                     <h1 className='font-bold text-2xl mb-2'>Product</h1>
-                    <ul className='flex flex-col gap-3'>
+                    <ul className='flex flex-col gap-3 text-sm'>
                         <li>Features</li>
                         <li>Pricing</li>
                         <li>Templates</li>
@@ -24,7 +24,7 @@ const Footer = () => {
 
                   <div>
                     <h1 className='font-bold text-2xl mb-2'>Company</h1>
-                    <ul className='flex flex-col gap-3'>
+                    <ul className='flex flex-col gap-3 text-sm'>
                         <li>About</li>
                         <li>Blog</li>
                         <li>Careers</li>
@@ -34,7 +34,7 @@ const Footer = () => {
 
                   <div>
                     <h1 className='font-bold text-2xl mb-2'>Resources</h1>
-                    <ul className='flex flex-col gap-3'>
+                    <ul className='flex flex-col gap-3 text-sm'>
                         <li>Documentation</li>
                         <li>Help Center</li>
                         <li>Community</li>
@@ -56,9 +56,9 @@ const Footer = () => {
             <div className='bg-white h-px mt-20'></div>
 
 
-            <div className='flex justify-between mt-8'>
-                <h1>© 2026 Digitools. All rights reserved.</h1>
-                <ul className='flex gap-10'>
+            <div className='flex flex-col gap-4 items-center lg:flex-row lg:justify-between mt-8'>
+                <h1 className='text-center text-sm'>© 2026 Digitools. All rights reserved.</h1>
+                <ul className='flex gap-10 text-sm'>
                     <li>Privacy Policy</li>
                     <li>Terms of Service</li>
                     <li>Cookies</li>

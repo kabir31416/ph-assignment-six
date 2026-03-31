@@ -4,7 +4,7 @@ const Statistics = () => {
     return (
         <div>
 
-            <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-6 py-12 lg:px-20 lg:py-16 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-0'>
+            <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-6 py-12 lg:px-50 lg:py-25 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-0'>
 
                 
                 <div className='flex flex-col items-center text-center'>
