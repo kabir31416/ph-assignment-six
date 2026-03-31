@@ -15,6 +15,7 @@ const Cart = ({addedProduct ,setAddedProduct, setNavCart}) => {
         const handleProceed = () => {
             setAddedProduct([])
             setNavCart(0)
+            toast(`Waitting for payment !`);
         }
 
         const totalPrice = addedProduct.reduce((total, product) => total + product.price, 0);
